@@ -4,7 +4,7 @@
 <!doctype html>
 <html>
 
-        <title>Etherpad Lite</title>
+        <title>Framapad Lite</title>
 
         <meta charset="utf-8">
         <meta name="robots" content="noindex, nofollow">
@@ -28,60 +28,60 @@
             <ul class="menu_left">
                 <% e.begin_block("editbarMenuLeft"); %>
                 <li class="acl-write" id="bold" data-key="bold">
-                    <a class="grouped-left" title="Bold (ctrl-B)">
+                    <a class="grouped-left" title="Gras (ctrl-B)">
                       <span class="buttonicon buttonicon-bold"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="italic" data-key="italic">
-                    <a class="grouped-middle" title="Italics (ctrl-I)">
+                    <a class="grouped-middle" title="Italique (ctrl-I)">
                       <span class="buttonicon buttonicon-italic"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="underline" data-key="underline">
-                    <a class="grouped-middle" title="Underline (ctrl-U)">
+                    <a class="grouped-middle" title="Souligné (ctrl-U)">
                       <span class="buttonicon buttonicon-underline"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="strikethrough" data-key="strikethrough">
-                    <a class="grouped-right" title="Strikethrough">
+                    <a class="grouped-right" title="Barré">
                       <span class="buttonicon buttonicon-strikethrough"></span>
                     </a>
                 </li>
                 <li class="acl-write separator"></li>
                 <li class="acl-write" id="oderedlist" data-key="insertorderedlist">
-                    <a class="grouped-left" title="Toggle Ordered List">
+                    <a class="grouped-left" title="Insérer une liste numérotéé">
                       <span class="buttonicon buttonicon-insertorderedlist"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="unoderedlist" data-key="insertunorderedlist">
-                    <a class="grouped-middle" title="Toggle Bullet List">
+                    <a class="grouped-middle" title="Insérer une list à puce">
                       <span class="buttonicon buttonicon-insertunorderedlist"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="indent" data-key="indent">
-                    <a class="grouped-middle" title="Indent">
+                    <a class="grouped-middle" title="Indenter la liste">
                       <span class="buttonicon buttonicon-indent"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="outdent" data-key="outdent">
-                    <a class="grouped-right" title="Unindent">
+                    <a class="grouped-right" title="Désindenter la liste">
                       <span class="buttonicon buttonicon-outdent"></span>
                     </a>
                 </li>
                 <li class="acl-write separator"></li>
                 <li class="acl-write" id="undo" data-key="undo">
-                    <a class="grouped-left" title="Undo (ctrl-Z)">
+                    <a class="grouped-left" title="Annuler (ctrl-Z)">
                       <span class="buttonicon buttonicon-undo"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="redo" data-key="redo">
-                    <a class="grouped-right" title="Redo (ctrl-Y)">
+                    <a class="grouped-right" title="Rétablir (ctrl-Y)">
                       <span class="buttonicon buttonicon-redo"></span>
                     </a>
                 </li>
                 <li class="acl-write separator"></li>
                 <li class="acl-write" id="clearAuthorship" data-key="clearauthorship">
-                    <a title="Clear Authorship Colors">
+                    <a title="Enlever les couleurs">
                       <span class="buttonicon buttonicon-clearauthorship"></span>
                     </a>
                 </li>
@@ -90,34 +90,34 @@
             <ul class="menu_right">
                 <% e.begin_block("editbarMenuRight"); %>
                 <li data-key="import_export">
-                    <a class="grouped-left" id="importexportlink" title="Import/Export from/to different document formats">
+                    <a class="grouped-left" id="importexportlink" title="Importer/Exporter depuis et vers différents formats de documents">
                         <span class="buttonicon buttonicon-import_export"></span>
                     </a>
                 </li>
                 <li onClick="document.location = document.location.pathname+ '/timeslider'">
-                    <a id="timesliderlink" class="grouped-middle" title="Show the history of this pad">
+                    <a id="timesliderlink" class="grouped-middle" title="Afficher l'historique de ce pad">
                         <span class="buttonicon buttonicon-history"></span>
                     </a>
                 </li>
                 <li class="acl-write" data-key="savedRevision">
-                    <a class="grouped-right" id="revisionlink" title="Mark this revision as a saved revision">
+                    <a class="grouped-right" id="revisionlink" title="Marquer cette révision comme sauvegardée">
                         <span class="buttonicon buttonicon-savedRevision"></span>
                     </a>
                 </li>
                 <li class="acl-write separator"></li>
                 <li class="acl-write" data-key="settings">
-                    <a class="grouped-left" id="settingslink" title="Settings of this pad">
+                    <a class="grouped-left" id="settingslink" title="Options de ce pad">
                         <span class="buttonicon buttonicon-settings"></span>
                     </a>
                 </li>
                 <li data-key="embed">
-                    <a class="grouped-right" id="embedlink" title="Share and Embed this pad">
+                    <a class="grouped-right" id="embedlink" title="Partager et inclure ce pad dans une page">
                         <span class="grouped-right buttonicon buttonicon-embed"></span>
                     </a>
                 </li>
                 <li class="separator"></li>
                 <li id="usericon" data-key="showusers">
-                    <a title="Show connected users">
+                    <a title="Afficher les utilisateurs connectés">
                         <span class="buttonicon buttonicon-showusers"></span>
                         <span id="online_count">1</span>
                     </a>
@@ -131,8 +131,8 @@
             <div id="myuser">
                 <div id="mycolorpicker">
                     <div id="colorpicker"></div>
-                    <button id="mycolorpickersave">Save</button>
-                    <button id="mycolorpickercancel">Cancel</button>
+                    <button id="mycolorpickersave">Enregistrer</button>
+                    <button id="mycolorpickercancel">Annuler</button>
                     <span id="mycolorpickerpreview" class="myswatchboxhoverable"></span>
                 </div>
                 <div id="myswatchbox"><div id="myswatch"></div></div>
@@ -152,56 +152,61 @@
         <div id="editorcontainerbox">
             <div id="editorcontainer"></div>
             <div id="editorloadingbox">
-              <p>Loading...</p>
+              <p>Chargement...</p>
               <noscript><strong>Sorry, you have to enable Javascript in order to use this.</strong></noscript>
+              <noscript><strong>Désolé, Javascript doit être activé pour pouvoir utiliser ce pad.</strong></noscript>
             </div>
         </div>
 
         <div id="settings" class="popup">
-            <h1>Pad settings</h1>
+            <h1>Paramètres du pad</h1>
             <div class="column">
                 <% e.begin_block("mySettings"); %>
-                <h2>My view</h2>
+                <h2>Mes préférences</h2>
                 <p>
                     <input type="checkbox" id="options-stickychat" onClick="chat.stickToScreen();">
-                    <label for="options-stickychat">Chat always on screen</label>
+                    <label for="options-stickychat">Fenêtre de chat toujours visible</label>
+                </p>
+                <p>
+                    <label for="options-chatwidth">Taille du chat :</label>
+                    <input type="text" id="options-chatwidth" value="20" onChange="chat.stickToScreen();">
                 </p>
                 <p>
                     <input type="checkbox" id="options-colorscheck">
-                    <label for="options-colorscheck">Authorship colors</label>
+                    <label for="options-colorscheck">Couleurs différentes selon les utilisateurs</label>
                 </p>
                 <p>
                     <input type="checkbox" id="options-linenoscheck" checked>
-                    <label for="options-linenoscheck">Line numbers</label>
+                    <label for="options-linenoscheck">Numéro de lignes</label>
                 </p>
                 <p>
-                    Font type:
+                    Type de police:
                     <select id="viewfontmenu">
-                        <option value="normal">Normal</option>
-                        <option value="monospace">Monospaced</option>
+                        <option value="normal">Normale</option>
+                        <option value="monospace">Monospace (largeur fixe)</option>
                     </select>
                 </p>
                 <% e.end_block(); %>
             </div>
             <div class="column">
                 <% e.begin_block("globalSettings"); %>
-                <h2>Global view</h2>
+                <h2>Vue générale</h2>
                 <% e.end_block(); %>
             </div>
         </div>
 
         <div id="importexport" class="popup">
-            <h1>Import/Export</h1>
+            <h1>Importer/Exporter</h1>
             <div class="column acl-write">
                 <% e.begin_block("importColumn"); %>
-                <h2>Upload any text file or document</h2><br>
+                <h2>Importer un document</h2><br>
                 <form id="importform" method="post" action="" target="importiframe" enctype="multipart/form-data">
                     <div class="importformdiv" id="importformfilediv">
                         <input type="file" name="file" size="15" id="importfileinput">
                         <div class="importmessage" id="importmessagefail"></div>
                     </div>
                     <div id="import"></div>
-                    <div class="importmessage" id="importmessagesuccess">Successful!</div>
+                    <div class="importmessage" id="importmessagesuccess">Importation réussie !</div>
                     <div class="importformdiv" id="importformsubmitdiv">
                         <input type="hidden" name="padId" value="blpmaXT35R">
                         <span class="nowrap">
@@ -214,14 +219,14 @@
                 <% e.end_block(); %>
             </div>
             <div class="column">
-                <h2>Export current pad as</h2>
+                <h2>Exporter le pad en format :</h2>
                 <% e.begin_block("exportColumn"); %>
                 <a id="exporthtmla" target="_blank" class="exportlink"><div class="exporttype" id="exporthtml">HTML</div></a>
-                <a id="exportplaina" target="_blank" class="exportlink"><div class="exporttype" id="exportplain">Plain text</div></a>
+                <a id="exportplaina" target="_blank" class="exportlink"><div class="exporttype" id="exportplain">Texte brut</div></a>
                 <a id="exportworda" target="_blank" class="exportlink"><div class="exporttype" id="exportword">Microsoft Word</div></a>
                 <a id="exportpdfa" target="_blank" class="exportlink"><div class="exporttype" id="exportpdf">PDF</div></a>
                 <a id="exportopena" target="_blank" class="exportlink"><div class="exporttype" id="exportopen">OpenDocument</div></a>
-                <a id="exportdokuwikia" target="_blank" class="exportlink"><div class="exporttype" id="exportdokuwiki">DokuWiki text</div></a>
+                <a id="exportdokuwikia" target="_blank" class="exportlink"><div class="exporttype" id="exportdokuwiki">DokuWiki</div></a>
                 <% e.end_block(); %>
             </div>
         </div>
@@ -229,48 +234,48 @@
         <div id="connectivity" class="popup">
             <% e.begin_block("modals"); %>
                 <div class="connected visible">
-                  <h2>Connected.</h2>
+                  <h2>Connecté.</h2>
                 </div>
                 <div class="reconnecting">
-                  <h1>Reestablishing connection...</h1>
+                  <h1>Rétablissement de la connexion...</h1>
                   <p><img alt="" border="0" src="/static/img/connectingbar.gif" /></p>
                 </div>
                 <div class="userdup">
-                  <h1>Opened in another window.</h1>
-                  <h2>You seem to have opened this pad in another browser window.</h2>
-                  <p>If you'd like to use this window instead, you can reconnect.</p>
-                  <button id="forcereconnect">Reconnect Now</button>
+                  <h1>Ouvert dans une autre fenêtre.</h1>
+                  <h2>Il semblerait que vous ayez ouvert ce pad dans une autre page de navigateur.</h2>
+                  <p>Si vous souhaitez utiliser cette fenêtre à la place, vous pouvez vous reconnecter..</p>
+                  <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <div class="unauth">
-                  <h1>No Authorization.</h1>
-                  <p>Your browser's credentials or permissions have changed while viewing this pad. Try reconnecting.</p>
-                  <button id="forcereconnect">Reconnect Now</button>
+                  <h1>Non autorisé.</h1>
+                  <p>Les identifiants et permissions de votre navigateur ont changé pendant que vous regardiez ce pad. Essayez de vous reconnecter.</p>
+                  <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <div class="looping">
-                  <h1>Disconnected.</h1>
-                  <h2>We're having trouble talking to the EtherPad lite synchronization server.</h2>
-                  <p>You may be connecting through an incompatible firewall or proxy server.</p>
+                  <h1>Déconnecté.</h1>
+                  <p><b>Nous avons du mal à faire se synchroniser le pad et le serveur.</b></p>
+                  <p>Il est possible que vous soyez connecté à travers un pare-feu incompatible ou un serveur proxy.</p>
                 </div>
                 <div class="initsocketfail">
-                  <h1>Disconnected.</h1>
-                  <h2>We were unable to connect to the EtherPad lite synchronization server.</h2>
-                  <p>This may be due to an incompatibility with your web browser or internet connection.</p>
+                  <h1>Déconnecté.</h1>
+                  <h2>Nous n'avons pas pu nous connecter au serveur de synchronisation de l'Etherpad lite.</b></h2>
+                  <p>Il se peut qu'il existe une incompatibilité avec votre navigateur internet ou votre connexion.</p>
                 </div>
                 <div class="slowcommit">
-                  <h1>Disconnected.</h1>
-                  <h2>Server not responding.</h2>
+                  <h1>Déconnecté.</h1>
+                  <h2>Le serveur ne répond pas.</h2>
                   <p>This may be due to network connectivity issues or high load on the server.</p>
-                  <button id="forcereconnect">Reconnect Now</button>
+                  <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <div class="deleted">
-                  <h1>Disconnected.</h1>
-                  <p>This pad was deleted.</p>
+                  <h1>Déconnecté.</h1>
+                  <p>Ce pad a été supprimé.</p>
                 </div>
                 <div class="disconnected">
-                  <h1>Disconnected.</h1>
-                  <h2>Lost connection with the EtherPad lite synchronization server.</h2>
-                  <p>This may be due to a loss of network connectivity. If this continues to happen, please let us know</p>
-                  <button id="forcereconnect">Reconnect Now</button>
+                  <h1>Déconnecté.</h1>
+                  <h2>La connexion avec le serveur de synchronisation d'Etherpad lite a été perdue.</h2>
+                  <p>Cela peut venir d'une perte de connectivité au réseau. Si le problème persiste, merci de nous le faire savoir</p>
+                  <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <form id="reconnectform" method="post" action="/ep/pad/reconnect" accept-charset="UTF-8" style="display: none;">
                     <input type="hidden" class="padId" name="padId">
@@ -284,16 +289,16 @@
             <% e.begin_block("embedPopup"); %>
             <div id="embedreadonly" class="right acl-write">
                 <input type="checkbox" id="readonlyinput" onClick="padeditbar.setEmbedLinks();">
-                <label for="readonlyinput">Read only</label>
+                <label for="readonlyinput">Lecture seule</label>
             </div>
-            <h1>Share this pad</h1>
+            <h1>Partager ce pad</h1>
             <div id="linkcode">
-                <h2>Link</h2>
+                <h2>Lien</h2>
                 <input id="linkinput" type="text" value="">
             </div>
             <br>
             <div id="embedcode">
-                <h2>Embed URL</h2>
+                <h2>Incorporer l'URL</h2>
                 <input id="embedinput" type="text" value="">
             </div>
             <% e.end_block(); %>
@@ -301,7 +306,7 @@
 
         <div id="chatthrob"></div>
 
-        <div id="chaticon" title="Open the chat for this pad" onclick="chat.show();return false;">
+        <div id="chaticon" title="Ouvrir le chat pour ce pad" onclick="chat.show();return false;">
             <span id="chatlabel">Chat</span>
             <span class="buttonicon buttonicon-chat"></span>
             <span id="chatcounter">0</span>
@@ -312,7 +317,7 @@
             <div id="chattext" class="authorColors"></div>
             <div id="chatinputbox">
                 <form>
-                    <input id="chatinput" type="text" maxlength="140">
+                    <input id="chatinput" type="text">
                 </form>
             </div>
         </div>
@@ -330,7 +335,7 @@
               var originalHandler = window.onerror;
               window.onerror = function(msg, url, line) {
                 var box   = document.getElementById('editorloadingbox');
-                box.innerHTML = '<p><b>An error occured while loading the pad</b></p>'
+                box.innerHTML = '<p><b>Une erreur est survenue lors du chargement de ce pad.</b></p>'
                               + '<p><b>'+msg+'</b> '
                               + '<small>in '+ url +' (line '+ line +')</small></p>';
                 // call original error handler

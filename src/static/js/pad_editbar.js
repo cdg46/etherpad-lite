@@ -169,7 +169,7 @@ var padeditbar = (function()
             {
               if ((!(ace.ace_getRep().selStart && ace.ace_getRep().selEnd)) || ace.ace_isCaret())
               {
-                if (window.confirm("Clear authorship colors on entire document?"))
+                if (window.confirm("Effacer toutes les couleurs de l'ensemble du document ?"))
                 {
                   ace.ace_performDocumentApplyAttributesToCharRange(0, ace.ace_getRep().alltext.length, [
                     ['author', '']

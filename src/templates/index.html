@@ -121,8 +121,8 @@
 
         <div id="wrapper">
             <div id="inner">
-                <div id="button" onclick="go2Random()" class="translate">New Pad</div>
-                <div id="label" class="translate">or create/open a Pad with the name</div> 
+                <div id="button" onclick="go2Random()" class="translate">Nouveau Pad</div>
+                <div id="label" class="translate">ou bien choisissez ci-dessous le nom du pad que vous voulez créer :</div>
                 <form action="#" onsubmit="go2Name();return false;"> 
                     <input type="text" id="padname" autofocus x-webkit-speech> 
                     <button type="submit">OK</button>
@@ -136,7 +136,7 @@
             function go2Name() 
             {
                 var padname = document.getElementById("padname").value;
-                padname.length > 0 ? window.location = "p/" + padname : alert("Please enter a name")
+                padname.length > 0 ? window.location = "p/" + padname : alert("Veuillez saisir un nom")
             }
  
             function go2Random() 

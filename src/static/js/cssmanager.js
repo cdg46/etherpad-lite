@@ -20,10 +20,10 @@
  * limitations under the License.
  */
 
-function makeCSSManager(emptyStylesheetTitle)
+function makeCSSManager(emptyStylesheetTitle, parentCss)
 {
 
-  function getSheetByTitle(title)
+  function getSheetByTitle(title, parentCss)
   {
     var allSheets = document.styleSheets;
     
@@ -38,7 +38,7 @@ function makeCSSManager(emptyStylesheetTitle)
     return null;
   }
   
-  var browserSheet = getSheetByTitle(emptyStylesheetTitle);
+  var browserSheet = getSheetByTitle(emptyStylesheetTitle, parentCss);
 
   function browserRules()
   {

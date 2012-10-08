@@ -71,6 +71,15 @@ var padeditor = (function()
         padcookie.setPref('showAuthorshipColors', padutils.getCheckbox("#options-colorscheck"));
         pad.changeViewOption('showAuthorColors', padutils.getCheckbox("#options-colorscheck"));
       });
+      padutils.bindCheckboxChange($("#options-chatwidth"), function()
+      {
+        padcookie.setPref('chatWidth', $("#options-chatwidth").val());
+        if(padutils.getCheckbox("#options-stickychat")){
+            var chatwidth = padcookie.getPref('chatWidth');
+            $('#editorcontainer').css({"right":chatwidth+"%", "width":"auto"});
+            $('#chatbox').get(0).style.setProperty("width", (chatwidth-0.5)+"%", "important");
+        }
+      });
       $("#viewfontmenu").change(function()
       {
         pad.changeViewOption('useMonospaceFont', $("#viewfontmenu").val() == 'monospace');

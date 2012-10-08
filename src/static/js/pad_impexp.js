@@ -69,7 +69,7 @@ var padimpexp = (function()
   function fileInputSubmit()
   {
     $('#importmessagefail').fadeOut("fast");
-    var ret = window.confirm("Importing a file will overwrite the current text of the pad." + " Are you sure you want to proceed?");
+    var ret = window.confirm("Importer un fichier remplacera le texte courant sur le pad." + " Voulez-vous vraiment continuer ?");
     if (ret)
     {        
       hidePanelCall = paddocbar.hideLaterIfNoOtherInteraction();
@@ -106,7 +106,7 @@ var padimpexp = (function()
 
   function importDone()
   {
-    $('#importsubmitinput').removeAttr('disabled').val("Import Now");
+    $('#importsubmitinput').removeAttr('disabled').val("Importer");
     window.setTimeout(function()
     {
       $('#importfileinput').removeAttr('disabled');
@@ -130,14 +130,14 @@ var padimpexp = (function()
     var msg="";
   
     if(status === "convertFailed"){
-      msg = "We were not able to import this file. Please use a different document format or copy paste manually";
+      msg = "Impossible d'importer ce fichier. Veuillez utiliser un autre format de document ou bien copier le texte manuellement";
     } else if(status === "uploadFailed"){
-      msg = "The upload failed, please try again";
+      msg = "Échec de l'envoi en ligne, veuillez réessayer";
     }
   
     function showError(fade)
     {
-      $('#importmessagefail').html('<strong style="color: red">Import failed:</strong> ' + (msg || 'Please copy paste'))[(fade ? "fadeIn" : "show")]();
+        $('#importmessagefail').html('<strong style="color: red">Import impossible :</strong> ' + (msg || 'veuillez copier-coller le texte du pad'))[(fade ? "fadeIn" : "show")]();
     }
 
     if ($('#importexport .importmessage').is(':visible'))
@@ -198,7 +198,7 @@ var padimpexp = (function()
     {
       type = "this file";
     }
-    alert("Exporting as " + type + " format is disabled. Please contact your" + " system administrator for details.");
+    alert("L'export au format " + type + " est désactivé. Veuillez contacter votre" + " administrateur système pour en savoir plus.");
     return false;
   }
 
@@ -226,7 +226,7 @@ var padimpexp = (function()
         $("#exportpdfa").remove();
         $("#exportopena").remove();
         $(".importformdiv").remove();
-        $("#import").html("Import is not available.  To enable import please install abiword");
+        $("#import").html("Import indisponible.  Installez Abiword pour l'activer.");
       }
       else if(clientVars.abiwordAvailable == "withoutPDF")
       {

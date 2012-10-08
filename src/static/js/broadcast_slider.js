@@ -193,7 +193,7 @@ function loadBroadcastSliderJS(fireWhenAllScriptsAreLoaded)
       });
       if (numAnonymous > 0)
       {
-        var anonymousAuthorString = numAnonymous + " unnamed author" + (numAnonymous > 1 ? "s" : "")
+        var anonymousAuthorString = numAnonymous + " auteur" + (numAnonymous > 1 ? "s" : "") + " inconnu" + (numAnonymous > 1 ? "s" : "")
         if (numNamed !== 0){
           authorsList.append(' + ' + anonymousAuthorString);
         } else {
