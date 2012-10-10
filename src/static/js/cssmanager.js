@@ -25,7 +25,8 @@ function makeCSSManager(emptyStylesheetTitle, parentCss)
 
   function getSheetByTitle(title, parentCss)
   {
-    var allSheets = document.styleSheets;
+    if (parentCss) var allSheets = window.parent.parent.document.styleSheets;
+    else var allSheets = document.styleSheets;
     
     for (var i = 0; i < allSheets.length; i++)
     {
