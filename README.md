@@ -51,8 +51,8 @@ Now, run `start.bat` and open <http://localhost:9001> in your browser. You like 
 You'll need [node.js](http://nodejs.org) and (optionally, though recommended) git.
 
 1. Grab the source, either
-  - download <https://github.com/Pita/etherpad-lite/zipball/master>
-  - or `git clone https://github.com/Pita/etherpad-lite.git` (for this you need git, obviously)
+  - download <https://github.com/framasoft/etherpad-lite/zipball/master>
+  - or `git clone https://github.com/framasoft/etherpad-lite.git` (for this you need git, obviously)
 2. start `bin\installOnWindows.bat`
 
 Now, run `start.bat` and open <http://localhost:9001> in your browser.
@@ -70,7 +70,7 @@ Additionally, you'll need [node.js](http://nodejs.org).
 
 **As any user (we recommend creating a separate user called etherpad-lite):**
 
-1. Move to a folder where you want to install Etherpad Lite. Clone the git repository `git clone git://github.com/Pita/etherpad-lite.git`
+1. Move to a folder where you want to install Etherpad Lite. Clone the git repository `git clone git://github.com/framasoft/etherpad-lite.git`
 2. Change into the new directory containing the cloned source code `cd etherpad-lite`
 
 Now, run `bin\run.sh` and open <http://127.0.0.1:9001> in your browser. 
