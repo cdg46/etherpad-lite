@@ -38,23 +38,23 @@
                     </a>
                 </li>
                 <li class="acl-write" id="underline" data-key="underline">
-                    <a class="grouped-middle" title="Souligné (ctrl-U)">
+                    <a class="grouped-middle" title="Soulign&eacute; (ctrl-U)">
                       <span class="buttonicon buttonicon-underline"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="strikethrough" data-key="strikethrough">
-                    <a class="grouped-right" title="Barré">
+                    <a class="grouped-right" title="Barr&eacute;">
                       <span class="buttonicon buttonicon-strikethrough"></span>
                     </a>
                 </li>
                 <li class="acl-write separator"></li>
                 <li class="acl-write" id="oderedlist" data-key="insertorderedlist">
-                    <a class="grouped-left" title="Insérer une liste numérotéé">
+                    <a class="grouped-left" title="Ins&eacute;rer une liste num&eacute;rot&eacute;e">
                       <span class="buttonicon buttonicon-insertorderedlist"></span>
                     </a>
                 </li>
                 <li class="acl-write" id="unoderedlist" data-key="insertunorderedlist">
-                    <a class="grouped-middle" title="Insérer une list à puce">
+                    <a class="grouped-middle" title="Ins&eacute;rer une liste &agrave; puce">
                       <span class="buttonicon buttonicon-insertunorderedlist"></span>
                     </a>
                 </li>
@@ -64,7 +64,7 @@
                     </a>
                 </li>
                 <li class="acl-write" id="outdent" data-key="outdent">
-                    <a class="grouped-right" title="Désindenter la liste">
+                    <a class="grouped-right" title="D&eacute;sindenter la liste">
                       <span class="buttonicon buttonicon-outdent"></span>
                     </a>
                 </li>
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="acl-write" id="redo" data-key="redo">
-                    <a class="grouped-right" title="Rétablir (ctrl-Y)">
+                    <a class="grouped-right" title="R&eacute;tablir (ctrl-Y)">
                       <span class="buttonicon buttonicon-redo"></span>
                     </a>
                 </li>
@@ -90,7 +90,7 @@
             <ul class="menu_right">
                 <% e.begin_block("editbarMenuRight"); %>
                 <li data-key="import_export">
-                    <a class="grouped-left" id="importexportlink" title="Importer/Exporter depuis et vers différents formats de documents">
+                    <a class="grouped-left" id="importexportlink" title="Importer/Exporter depuis et vers diff&eacute;rents formats de documents">
                         <span class="buttonicon buttonicon-import_export"></span>
                     </a>
                 </li>
@@ -100,7 +100,7 @@
                     </a>
                 </li>
                 <li class="acl-write" data-key="savedRevision">
-                    <a class="grouped-right" id="revisionlink" title="Marquer cette révision comme sauvegardée">
+                    <a class="grouped-right" id="revisionlink" title="Marquer cette r&eacute;vision comme sauvegard&eacute;e">
                         <span class="buttonicon buttonicon-savedRevision"></span>
                     </a>
                 </li>
@@ -117,7 +117,7 @@
                 </li>
                 <li class="separator"></li>
                 <li id="usericon" data-key="showusers">
-                    <a title="Afficher les utilisateurs connectés">
+                    <a title="Afficher les utilisateurs connect&eacute;s">
                         <span class="buttonicon buttonicon-showusers"></span>
                         <span id="online_count">1</span>
                     </a>
@@ -153,18 +153,18 @@
             <div id="editorcontainer"></div>
             <div id="editorloadingbox">
               <p>Chargement...</p>
-              <noscript><strong>Désolé, Javascript doit être activé pour pouvoir utiliser ce pad.</strong></noscript>
+              <noscript><strong>D&eacute;sol&eacute;, Javascript doit &ecirc;tre activ&eacute; pour pouvoir utiliser ce pad.</strong></noscript>
             </div>
         </div>
 
         <div id="settings" class="popup">
-            <h1>Paramètres du pad</h1>
+            <h1>Param&egrave;tres du pad</h1>
             <div class="column">
                 <% e.begin_block("mySettings"); %>
-                <h2>Mes préférences</h2>
+                <h2>Mes pr&eacute;f&eacute;rences</h2>
                 <p>
                     <input type="checkbox" id="options-stickychat" onClick="chat.stickToScreen();">
-                    <label for="options-stickychat">Fenêtre de chat toujours visible</label>
+                    <label for="options-stickychat">Fen&ecirc;tre de chat toujours visible</label>
                 </p>
                 <p>
                     <label for="options-chatwidth">Taille du chat :</label>
@@ -172,11 +172,11 @@
                 </p>
                 <p>
                     <input type="checkbox" id="options-colorscheck">
-                    <label for="options-colorscheck">Couleurs différentes selon les utilisateurs</label>
+                    <label for="options-colorscheck">Couleurs diff&eacute;rentes selon les utilisateurs</label>
                 </p>
                 <p>
                     <input type="checkbox" id="options-linenoscheck" checked>
-                    <label for="options-linenoscheck">Numéro de lignes</label>
+                    <label for="options-linenoscheck">Num&eacute;ro de lignes</label>
                 </p>
                 <p>
                     Type de police:
@@ -189,7 +189,7 @@
             </div>
             <div class="column">
                 <% e.begin_block("globalSettings"); %>
-                <h2>Vue générale</h2>
+                <h2>Vue g&eacute;n&eacute;rale</h2>
                 <% e.end_block(); %>
             </div>
         </div>
@@ -205,11 +205,11 @@
                         <div class="importmessage" id="importmessagefail"></div>
                     </div>
                     <div id="import"></div>
-                    <div class="importmessage" id="importmessagesuccess">Importation réussie !</div>
+                    <div class="importmessage" id="importmessagesuccess">Importation r&eacute;ussie !</div>
                     <div class="importformdiv" id="importformsubmitdiv">
                         <input type="hidden" name="padId" value="blpmaXT35R">
                         <span class="nowrap">
-                            <input type="submit" name="submit" value="Import Now" disabled="disabled" id="importsubmitinput">
+                            <input type="submit" name="submit" value="Importer" disabled="disabled" id="importsubmitinput">
                             <img alt="" id="importstatusball" src="../static/img/loading.gif" align="top">
                             <img alt="" id="importarrow" src="../static/img/leftarrow.png" align="top">
                         </span>
@@ -233,47 +233,47 @@
         <div id="connectivity" class="popup">
             <% e.begin_block("modals"); %>
                 <div class="connected visible">
-                  <h2>Connecté.</h2>
+                  <h2>Connect&eacute;.</h2>
                 </div>
                 <div class="reconnecting">
-                  <h1>Rétablissement de la connexion...</h1>
+                  <h1>R&eacute;tablissement de la connexion...</h1>
                   <p><img alt="" border="0" src="/static/img/connectingbar.gif" /></p>
                 </div>
                 <div class="userdup">
-                  <h1>Ouvert dans une autre fenêtre.</h1>
+                  <h1>Ouvert dans une autre fen&ecirc;tre.</h1>
                   <h2>Il semblerait que vous ayez ouvert ce pad dans une autre page de navigateur.</h2>
-                  <p>Si vous souhaitez utiliser cette fenêtre à la place, vous pouvez vous reconnecter..</p>
+                  <p>Si vous souhaitez utiliser cette fen&ecirc;tre &agrave; la place, vous pouvez vous reconnecter..</p>
                   <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <div class="unauth">
-                  <h1>Non autorisé.</h1>
-                  <p>Les identifiants et permissions de votre navigateur ont changé pendant que vous regardiez ce pad. Essayez de vous reconnecter.</p>
+                  <h1>Non autoris&eacute;.</h1>
+                  <p>Les identifiants et permissions de votre navigateur ont chang&eacute; pendant que vous regardiez ce pad. Essayez de vous reconnecter.</p>
                   <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <div class="looping">
-                  <h1>Déconnecté.</h1>
-                  <p><b>Nous avons du mal à faire se synchroniser le pad et le serveur.</b></p>
-                  <p>Il est possible que vous soyez connecté à travers un pare-feu incompatible ou un serveur proxy.</p>
+                  <h1>D&eacute;connect&eacute;.</h1>
+                  <p><b>Nous avons du mal &agrave; faire se synchroniser le pad et le serveur.</b></p>
+                  <p>Il est possible que vous soyez connect&eacute; &agrave; travers un pare-feu incompatible ou un serveur proxy.</p>
                 </div>
                 <div class="initsocketfail">
-                  <h1>Déconnecté.</h1>
+                  <h1>D&eacute;connect&eacute;.</h1>
                   <h2>Nous n'avons pas pu nous connecter au serveur de synchronisation de l'Etherpad lite.</b></h2>
-                  <p>Il se peut qu'il existe une incompatibilité avec votre navigateur internet ou votre connexion.</p>
+                  <p>Il se peut qu'il existe une incompatibilit&eacute; avec votre navigateur internet ou votre connexion.</p>
                 </div>
                 <div class="slowcommit">
-                  <h1>Déconnecté.</h1>
-                  <h2>Le serveur ne répond pas.</h2>
-                  <p>This may be due to network connectivity issues or high load on the server.</p>
+                  <h1>D&eacute;connect&eacute;.</h1>
+                  <h2>Le serveur ne r&eacute;pond pas.</h2>
+                  <p>Cela est peut-&ecirc;tre d&ucirc; &agrave; un probl&egrave;me de connexion ou de charge trop importante sur le serveur.</p>
                   <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <div class="deleted">
-                  <h1>Déconnecté.</h1>
-                  <p>Ce pad a été supprimé.</p>
+                  <h1>D&eacute;connect&eacute;.</h1>
+                  <p>Ce pad a &eacute;t&eacute; supprim&eacute;.</p>
                 </div>
                 <div class="disconnected">
-                  <h1>Déconnecté.</h1>
-                  <h2>La connexion avec le serveur de synchronisation d'Etherpad lite a été perdue.</h2>
-                  <p>Cela peut venir d'une perte de connectivité au réseau. Si le problème persiste, merci de nous le faire savoir</p>
+                  <h1>D&eacute;connect&eacute;.</h1>
+                  <h2>La connexion avec le serveur de synchronisation d'Etherpad lite a &eacute;t&eacute; perdue.</h2>
+                  <p>Cela peut venir d'une perte de connectivit&eacute; au r&eacute;seau. Si le probl&egrave;me persiste, merci de nous le faire savoir</p>
                   <button id="forcereconnect">Se reconnecter</button>
                 </div>
                 <form id="reconnectform" method="post" action="/ep/pad/reconnect" accept-charset="UTF-8" style="display: none;">
