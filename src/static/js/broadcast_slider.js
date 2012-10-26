@@ -215,7 +215,7 @@ function loadBroadcastSliderJS(fireWhenAllScriptsAreLoaded)
       }
       if (authors.length == 0)
       {
-        authorsList.append("No Authors");
+        authorsList.append("Pas d'auteurs");
       }
       
       fixPadHeight();

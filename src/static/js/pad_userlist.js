@@ -715,7 +715,7 @@ var paduserlist = (function()
       }
       else
       {
-        $("#myusernameedit").addClass("editempty").val("Enter your name");
+        $("#myusernameedit").addClass("editempty").val("Entrez votre nom");
       }
       if (colorPickerOpen)
       {
