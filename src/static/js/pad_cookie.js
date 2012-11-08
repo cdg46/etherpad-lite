@@ -75,7 +75,7 @@ var padcookie = (function()
 
     if (pad.getIsProPad() && (!getRawCookie()) && (!alreadyWarnedAboutNoCookies))
     {
-      alert("Avertissement : apparemment votre navigateur n'accepte pas les cookies." + " Framapad Lite emploie des cookies pour tenir le compte des utilisateurs uniques" + " et vérifier le quota d'utilisateurs actifs sur le pad. Si vous utilisez Framapad Lite sans " + " cookies vous risquez de dépasser les quotas de votre serveur plus vite que prévu.");
+      alert("Avertissement : apparemment votre navigateur n'accepte pas les cookies." + " Framapad Lite emploie des cookies pour tenir le compte des utilisateurs uniques" + " et v&eacute;rifier le quota d'utilisateurs actifs sur le pad. Si vous utilisez Framapad Lite sans " + " cookies vous risquez de d\351passer les quotas de votre serveur plus vite que pr\351vu.");
       alreadyWarnedAboutNoCookies = true;
     }
   }

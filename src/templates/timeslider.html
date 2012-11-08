@@ -79,48 +79,48 @@
 <div id="connectivity" class="popup">
   <% e.begin_block("modals"); %>
     <div class="connected visible">
-      <h2>Connecté.</h2>
+      <h2>Connect&eacute;.</h2>
     </div>
     <div class="reconnecting">
-      <h1>Rétablissement de la connexion...</h1>
+      <h1>R&eacute;tablissement de la connexion...</h1>
       <p><img alt="" border="0" src="/static/img/connectingbar.gif" /></p>
     </div>
     <div class="userdup">
-      <h1>Ouvert dans une autre fenêtre.</h1>
-      <h2>Il semblerait que ce pad soit ouvert dans une autre fenêtre du navigateur.</h2>
-      <p>Si vous souhaitez utiliser cette fenêtre, vous pouvez vous reconnecter.</p>
+      <h1>Ouvert dans une autre fen&ecirc;tre.</h1>
+      <h2>Il semblerait que ce pad soit ouvert dans une autre fen&ecirc;tre du navigateur.</h2>
+      <p>Si vous souhaitez utiliser cette fen&ecirc;tre, vous pouvez vous reconnecter.</p>
       <button id="forcereconnect">Se reconnecter</button>
     </div>
     <div class="unauth">
       <h1>Pas d'autorisation.</h1>
-      <p>Les identifiants et permissions de votre navigateur ont changé pendant que vous regardiez ce pad. Essayez de vous reconnecter.</p>
+      <p>Les identifiants et permissions de votre navigateur ont chang&eacute; pendant que vous regardiez ce pad. Essayez de vous reconnecter.</p>
       <button id="forcereconnect">Se reconnecter</button>
     </div>
     <div class="looping">
-      <h1>Déconnecté.</h1>
-      <h2>Nous avons du mal à faire se synchroniser le pad et le serveur.</h2>
+      <h1>D&eacute;connect&eacute;.</h1>
+      <h2>Nous avons du mal &agrave; faire se synchroniser le pad et le serveur.</h2>
       <p>You may be connecting through an incompatible firewall or proxy server.</p>
-      <p>Il est possible que vous soyez connecté à travers un pare-feu incompatible ou un serveur proxy.</p>
+      <p>Il est possible que vous soyez connect&eacute; &agrave; travers un pare-feu incompatible ou un serveur proxy.</p>
     </div>
     <div class="initsocketfail">
-      <h1>Déconnecté.</h1>
+      <h1>D&eacute;connect&eacute;.</h1>
       <h2>Nous n'avons pas pu nous connecter au serveur de synchronisation de l'Etherpad lite.</h2>
-      <p>Il se peut qu'il existe une incompatibilité avec votre navigateur internet ou votre connexion.</p>
+      <p>Il se peut qu'il existe une incompatibilit&eacute; avec votre navigateur internet ou votre connexion.</p>
     </div>
     <div class="slowcommit">
-      <h1>Déconnecté.</h1>
-      <h2>Le serveur ne répond pas.</h2>
-      <p>Cela peut venir d'un problème de connexion au réseau ou d'une charge trop importante du serveur.</p>
+      <h1>D&eacute;connect&eacute;.</h1>
+      <h2>Le serveur ne r&eacute;pond pas.</h2>
+      <p>Cela peut venir d'un probl&egrave;me de connexion au r&eacute;seau ou d'une charge trop importante du serveur.</p>
       <button id="forcereconnect">Se reconnecter</button>
     </div>
     <div class="deleted">
-      <h1>Déconnecté.</h1>
-      <p>Ce pad a été supprimé.</p>
+      <h1>D&eacute;connect&eacute;.</h1>
+      <p>Ce pad a &eacute;t&eacute; supprim&eacute;.</p>
     </div>
     <div class="disconnected">
-      <h1>Déconnecté.</h1>
+      <h1>D&eacute;connect&eacute;.</h1>
       <h2>La connexion entre EtherPad et le serveur de synchronisation est perdue.</h2>
-      <p>Si le problème persiste, merci de nous le faire savoir.</p>
+      <p>Si le probl&egrave;me persiste, merci de nous le faire savoir.</p>
       <button id="forcereconnect">Se reconnecter</button>
     </div>
     <form id="reconnectform" method="post" action="/ep/pad/reconnect" accept-charset="UTF-8" style="display: none;">

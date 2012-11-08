@@ -132,7 +132,7 @@ var padimpexp = (function()
     if(status === "convertFailed"){
       msg = "Impossible d'importer ce fichier. Veuillez utiliser un autre format de document ou bien copier le texte manuellement";
     } else if(status === "uploadFailed"){
-      msg = "Échec de l'envoi en ligne, veuillez réessayer";
+      msg = "&Eacute;chec de l'envoi en ligne, veuillez r&eacute;essayer";
     }
   
     function showError(fade)
@@ -198,7 +198,7 @@ var padimpexp = (function()
     {
       type = "this file";
     }
-    alert("L'export au format " + type + " est désactivé. Veuillez contacter votre" + " administrateur système pour en savoir plus.");
+    alert("L'export au format " + type + " est d\351sactiv\351. Veuillez contacter votre" + " administrateur syst\350me pour en savoir plus.");
     return false;
   }
 
